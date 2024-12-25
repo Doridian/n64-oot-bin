@@ -2,7 +2,6 @@
 *.n64
 *.v64
 *.z64
-/sf64-git
 /pkg
 /src
 
