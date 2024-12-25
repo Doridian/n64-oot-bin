@@ -1,0 +1,22 @@
+pkgbase = oot-bin
+	pkgdesc = Recompilation of Ocarina of Time for modern systems
+	pkgver = 8.0.6
+	pkgrel = 1
+	url = https://github.com/HarbourMasters/Shipwright
+	arch = x86_64
+	license = MIT
+	makedepends = unzip
+	options = !strip
+	options = !debug
+	source = https://github.com/HarbourMasters/Shipwright/releases/download/8.0.6/SoH-MacReady-Golf-Linux-Performance.zip
+	source = baserom.z64
+	source = launch.sh
+	source = oot-bin.desktop
+	source = logo.png
+	sha256sums = 570dd10a4d2f0fad984acd0df88f16845a3479b0b7e8fae7ca5ec1f698523752
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = oot-bin
