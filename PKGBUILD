@@ -8,6 +8,7 @@ arch=('x86_64')
 url='https://github.com/HarbourMasters/Shipwright'
 license=('MIT')
 makedepends=('unzip')
+depends=('zlib' 'fuse2')
 options=('!strip' '!debug')
 _relfile="SoH-MacReady-Golf-Linux-Performance.zip"
 source=(
