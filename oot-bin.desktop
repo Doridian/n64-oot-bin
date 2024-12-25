@@ -6,4 +6,4 @@ Terminal=false
 Icon=oot-bin
 Type=Application
 Categories=Game;
-StartupWMClass=Starship
+StartupWMClass=soh.elf
