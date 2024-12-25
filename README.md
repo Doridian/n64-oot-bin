@@ -1,4 +1,4 @@
-# oot-bin
+# n64-oot-bin
 
 This is a PKGBUILD for https://github.com/HarbourMasters/Shipwright
 

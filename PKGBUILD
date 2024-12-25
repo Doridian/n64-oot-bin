@@ -1,6 +1,6 @@
 # Maintainer: Doridian <archlinux at doridian dot net>
 
-pkgname=oot-bin
+pkgname=n64-oot-bin
 pkgver=8.0.6
 pkgrel=1
 pkgdesc='Recompilation of Ocarina of Time for modern systems'
@@ -15,7 +15,7 @@ source=(
     "${url}/releases/download/${pkgver}/${_relfile}"
     'baserom.z64' # Copyrighted, you have to find this yourself, make sure to check on https://ship.equipment/
     'launch.sh'
-    'oot-bin.desktop'
+    'n64-oot-bin.desktop'
     'logo.png'
 )
 sha256sums=(
@@ -34,11 +34,12 @@ build() {
 package() {
   cd "${srcdir}"
 
-  install -Dm755 launch.sh "${pkgdir}/opt/oot-bin/launch.sh"
-  install -Dm644 oot-bin.desktop "${pkgdir}/usr/share/applications/oot-bin.desktop"
-  install -Dm755 soh.appimage "${pkgdir}/opt/oot-bin/soh.appimage"
-  install -Dm644 logo.png "${pkgdir}/usr/share/pixmaps/oot-bin.png"
-  install -Dm644 baserom.z64 "${pkgdir}/opt/oot-bin/baserom.z64"
+  install -Dm644 n64-oot-bin.desktop "${pkgdir}/usr/share/applications/n64-oot-bin.desktop"
+  install -Dm644 logo.png "${pkgdir}/usr/share/pixmaps/n64-oot-bin.png"
+
+  install -Dm755 launch.sh "${pkgdir}/opt/n64/oot-bin/launch.sh"
+  install -Dm755 soh.appimage "${pkgdir}/opt/n64/oot-bin/soh.appimage"
+  install -Dm644 baserom.z64 "${pkgdir}/opt/n64/oot-bin/baserom.z64"
 }
 
 # vim:set ts=2 sw=2 et:
