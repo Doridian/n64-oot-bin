@@ -1,7 +1,7 @@
 # Maintainer: Doridian <archlinux at doridian dot net>
 
 pkgname=n64-oot-bin
-pkgver=8.0.6
+pkgver=9.0.2
 pkgrel=1
 pkgdesc='Recompilation of Ocarina of Time for modern systems'
 arch=('x86_64')
@@ -10,7 +10,7 @@ license=('MIT')
 makedepends=('unzip')
 depends=('zlib' 'fuse2')
 options=('!strip' '!debug')
-_relfile="SoH-MacReady-Golf-Linux-Performance.zip"
+_relfile="SoH-Blair-Charlie-Linux.zip"
 source=(
     "${url}/releases/download/${pkgver}/${_relfile}"
     'baserom.z64' # Copyrighted, you have to find this yourself, make sure to check on https://ship.equipment/
@@ -19,7 +19,7 @@ source=(
     'logo.png'
 )
 sha256sums=(
-    '570dd10a4d2f0fad984acd0df88f16845a3479b0b7e8fae7ca5ec1f698523752'
+    'e8ffa02daded3ded2caabc7e93c4bf1c5e656519113adbe06ae75c6c508d9866'
     'SKIP'
     'SKIP'
     'SKIP'
